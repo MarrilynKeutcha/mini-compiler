@@ -5,11 +5,11 @@
 
 void optimizeIntermediateCode(std::vector<std::string>& intermediateCode) {
     std::vector<std::string> optimizedCode;
-    std::map<std::string, int> constants;  // Tracks variables with known constant values
+    std::map<std::string, int> constants;
     std::smatch matches;
 
-    std::regex assignConst(R"(t(\d+)\s*=\s*(\d+))");  // tX = 5
-    std::regex binaryExpr(R"(t(\d+)\s*=\s*t(\d+)\s*([\+\-\*/])\s*t(\d+))");  // tX = tY + tZ
+    std::regex assignConst(R"(t(\d+)\s*=\s*(\d+))");
+    std::regex binaryExpr(R"(t(\d+)\s*=\s*t(\d+)\s*([\+\-\*/])\s*t(\d+))");
 
     for (std::string& line : intermediateCode) {
         if (std::regex_match(line, matches, assignConst)) {
@@ -17,35 +17,61 @@ void optimizeIntermediateCode(std::vector<std::string>& intermediateCode) {
             int value = std::stoi(matches[2].str());
             constants[var] = value;
             optimizedCode.push_back(line);
-        }
+        } 
         else if (std::regex_match(line, matches, binaryExpr)) {
             std::string resultVar = "t" + matches[1].str();
             std::string leftVar = "t" + matches[2].str();
             std::string rightVar = "t" + matches[4].str();
             char op = matches[3].str()[0];
 
-            if (constants.count(leftVar) && constants.count(rightVar)) {
+            bool leftIsConst = constants.count(leftVar);
+            bool rightIsConst = constants.count(rightVar);
+
+            // Constant folding
+            if (leftIsConst && rightIsConst) {
                 int left = constants[leftVar];
                 int right = constants[rightVar];
-                int result;
+                int result = 0;
 
                 switch (op) {
                     case '+': result = left + right; break;
                     case '-': result = left - right; break;
                     case '*': result = left * right; break;
                     case '/': result = (right != 0) ? left / right : 0; break;
-                    default: result = 0;
                 }
 
                 constants[resultVar] = result;
                 optimizedCode.push_back(resultVar + " = " + std::to_string(result));
-            } else {
-                optimizedCode.push_back(line);  // Keep original if not foldable
+            } 
+            // Algebraic simplification
+            else if ((op == '+' || op == '-') && rightIsConst && constants[rightVar] == 0) {
+                optimizedCode.push_back(resultVar + " = " + leftVar);
+            } 
+            else if ((op == '+') && leftIsConst && constants[leftVar] == 0) {
+                optimizedCode.push_back(resultVar + " = " + rightVar);
+            } 
+            else if ((op == '*') && ((leftIsConst && constants[leftVar] == 1))) {
+                optimizedCode.push_back(resultVar + " = " + rightVar);
             }
-        } else {
+            else if ((op == '*') && ((rightIsConst && constants[rightVar] == 1))) {
+                optimizedCode.push_back(resultVar + " = " + leftVar);
+            }
+            else if ((op == '*') && ((leftIsConst && constants[leftVar] == 0) || (rightIsConst && constants[rightVar] == 0))) {
+                optimizedCode.push_back(resultVar + " = 0");
+                constants[resultVar] = 0;
+            }
+            else if ((op == '/') && rightIsConst && constants[rightVar] == 1) {
+                optimizedCode.push_back(resultVar + " = " + leftVar);
+            }
+            else {
+                optimizedCode.push_back(line);  // Keep original
+            }
+        } 
+        else {
             optimizedCode.push_back(line);  // Pass through unoptimized
         }
     }
 
     intermediateCode = optimizedCode;
 }
+
