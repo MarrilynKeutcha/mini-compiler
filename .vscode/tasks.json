@@ -1,0 +1,27 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+	  {
+		"label": "Build Mini Compiler",
+		"type": "shell",
+		"command": "g++",
+		"args": [
+		  "-g",
+		  "main.cpp",
+		  "lexer.cpp",
+		  "parser.cpp",
+		  		  "codegen.cpp",
+		  "optimizer.cpp",
+		  "error_handler.cpp",
+		  "-o",
+		  "compiler.exe"
+		],
+		"group": {
+		  "kind": "build",
+		  "isDefault": true
+		},
+		"problemMatcher": ["$gcc"]
+	  }
+	]
+  }
+  

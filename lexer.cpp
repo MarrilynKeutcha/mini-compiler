@@ -1,4 +1,5 @@
 #include "lexer.h"
+#include <algorithm>
 
 std::vector<Token> tokenize(const std::string& code) {
     std::vector<Token> tokens;
@@ -7,7 +8,7 @@ std::vector<Token> tokenize(const std::string& code) {
     for (size_t i = 0; i < code.length(); i++) {
         char c = code[i];
 
-        // Skip whitespace
+   
         if (isspace(c)) continue;
 
         // Handle numbers
@@ -34,12 +35,12 @@ std::vector<Token> tokenize(const std::string& code) {
             current = "";
         }
         // Handle operators and delimiters
-        else if (std::find(operators.begin(), operators.end(), c) != operators.end()) {
+        else if (std::find(operators.begin(), operators.end(), static_cast<char>(c)) != operators.end()) {
             tokens.push_back({ "OPERATOR", std::string(1, c) });
         }
-        else if (std::find(delimiters.begin(), delimiters.end(), c) != delimiters.end()) {
+        else if (std::find(delimiters.begin(), delimiters.end(), static_cast<char>(c)) != delimiters.end()) {
             tokens.push_back({ "DELIMITER", std::string(1, c) });
-        }
+        }        
         else {
             std::cerr << "Error: Unrecognized character '" << c << "'\n";
         }

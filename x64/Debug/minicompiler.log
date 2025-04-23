@@ -1,8 +1,10 @@
 ﻿     0>Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+       Assembly loaded during Evaluation: System.Collections.Immutable, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\System.Collections.Immutable.dll, MVID: 5f9ff90f-0d16-4469-a104-76829d3705e2, AppDomain: [Default])
        Trying to import C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\$(MSBuildToolsVersion)\Microsoft.Common.props using extensions path C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild
        Property reassignment: $(MSBuildProjectExtensionsPath)="C:\Users\mkeut\source\repos\minicompiler\obj\" (previous value: "obj\") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Microsoft.Common.props (60,5)
        Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
        Trying to import C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\* using extensions path C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild
+       Assembly loaded during Evaluation: Microsoft.IO.Redist, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 (location: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\Microsoft.IO.Redist.dll, MVID: d528d43e-4d35-4c28-8aa6-a5ce49a5eba7, AppDomain: [Default])
        Property 'VisualStudioVersion' with value '17.0' expanded from the environment.
        The "Configuration" property is a global property, and cannot be modified.
        Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
@@ -13,6 +15,7 @@
        Property 'LOCALAPPDATA' with value 'C:\Users\mkeut\AppData\Local' expanded from the environment.
        Property reassignment: $(UseDebugLibraries)="true" (previous value: "false") at C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj (44,5)
        Property reassignment: $(CharacterSet)="Unicode" (previous value: "NotSet") at C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj (46,5)
+       Assembly loaded during Evaluation: Microsoft.Build.Utilities.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\Microsoft.Build.Utilities.Core.dll, MVID: 3dc6a2ed-8658-4938-87a8-a6d4ddd060be, AppDomain: [Default])
        Property 'PROCESSOR_ARCHITECTURE' with value 'AMD64' expanded from the environment.
        Property reassignment: $(WindowsSdkDir_10)="C:\Program Files (x86)\Windows Kits\10\" (previous value: "") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WindowsSDK.props (18,5)
        Property reassignment: $(NETFXSDK_Version)="4.8" (previous value: "4.8.1") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WindowsSDK.props (46,5)
@@ -786,8 +789,8 @@
        Overriding target "ComputeMetaGenInputs" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.MetaGen.targets" with target "ComputeMetaGenInputs" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
        Overriding target "GetNativeManifest" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "GetNativeManifest" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
        Overriding target "GetTargetPathWithTargetPlatformMoniker" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "GetTargetPathWithTargetPlatformMoniker" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets".
-Build started 12/3/2024 1:59:47 PM.
-Logging verbosity is set to: Detailed.     1>Project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" on node 2 (Rebuild target(s)).
+Build started 12/3/2024 10:44:53 PM.
+Logging verbosity is set to: Detailed.     1>Project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" on node 2 (Build target(s)).
      1>Target "EnableIntermediateOutputPathMismatchWarning" skipped, due to false condition; ('$(RestoreProjectStyle)' == 'PackageReference') was evaluated as ('' == 'PackageReference').
      1>Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "SetTelemetryEnvironmentVariables" depends on it):
        Task "Error" skipped, due to false condition; ( '$(_InvalidConfigurationError)' == 'true' ) was evaluated as ( '' == 'true' ).
@@ -806,13 +809,13 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\mkeut\source\repo
        Task "Warning" skipped, due to false condition; ( '$(EnableBaseIntermediateOutputPathMismatchWarning)' == 'true' And '$(_InitialBaseIntermediateOutputPath)' != '$(BaseIntermediateOutputPath)' And '$(BaseIntermediateOutputPath)' != '$(MSBuildProjectExtensionsPath)' ) was evaluated as ( '' == 'true' And 'obj\' != 'obj\' And 'obj\' != 'C:\Users\mkeut\source\repos\minicompiler\obj\' ).
      1>Done building target "_CheckForInvalidConfigurationAndPlatform" in project "minicompiler.vcxproj".
        Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
-     1>Target "SetTelemetryEnvironmentVariables" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "Rebuild" depends on it):
+     1>Target "SetTelemetryEnvironmentVariables" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "Build" depends on it):
        Using "SetEnv" task from assembly "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
        Task "SetEnv"
-         VSTEL_SolutionSessionID={B0F7092F-3417-46C8-B849-C2EBE2F9BE85}
+         VSTEL_SolutionSessionID={A9D8F79D-8CCA-451F-AD5F-822D2DFDD0D5}
        Done executing task "SetEnv".
        Task "SetEnv"
-         VSTEL_CurrentSolutionBuildID=3741049258
+         VSTEL_CurrentSolutionBuildID=962829119
        Done executing task "SetEnv".
        Task "SetEnv"
          VSTEL_SolutionPath=C:\Users\mkeut\source\repos\minicompiler\minicompiler.sln
@@ -824,56 +827,22 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\mkeut\source\repo
          VSTEL_ProjectID={3ea89047-a77e-461b-960e-0a1bc836533e}
        Done executing task "SetEnv".
      1>Done building target "SetTelemetryEnvironmentVariables" in project "minicompiler.vcxproj".
-     1>Target "_PrepareForRebuild" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "Rebuild" depends on it):
-     1>Done building target "_PrepareForRebuild" in project "minicompiler.vcxproj".
-     1>Target "BeforeRebuild" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "Rebuild" depends on it):
-     1>Done building target "BeforeRebuild" in project "minicompiler.vcxproj".
-     1>Target "_PrepareForClean" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "Clean" depends on it):
-       Task "Delete" skipped, due to false condition; (Exists($(LastBuildState))) was evaluated as (Exists(x64\Debug\minicompiler.tlog\minicompiler.lastbuildstate)).
-     1>Done building target "_PrepareForClean" in project "minicompiler.vcxproj".
-       Target "_WaitForServiceFabricApplicationCleanupBeforeClean" skipped, due to false condition; ('$(IsServiceFabricServiceProject)' == 'true') was evaluated as ('' == 'true').
-     1>Target "BeforeClean" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "Clean" depends on it):
-     1>Done building target "BeforeClean" in project "minicompiler.vcxproj".
-       Target "UnmanagedUnregistration" skipped, due to false condition; ((('$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)' or '$(RegisterForComInterop)' != 'true' or '$(OutputType)' != 'library') or
-                           ('$(_AssemblyTimestampBeforeCompile)' == '')) and
-                          Exists('@(_UnmanagedRegistrationCache)')) was evaluated as ((('' != '' or '' != 'true' or 'exe' != 'library') or
-                           ('' == '')) and
-                          Exists('obj\minicompiler.vcxproj.UnmanagedRegistration.cache')).
-     1>Target "CoreClean" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "Clean" depends on it):
-       Using "Delete" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "Delete"
-         File "x64\Debug\\TempCA\minicompiler.pdb" doesn't exist. Skipping.
-         File "x64\Debug\\TempCA\minicompiler.exe" doesn't exist. Skipping.
-       Done executing task "Delete".
-       Using "ReadLinesFromFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "ReadLinesFromFile"
-       Done executing task "ReadLinesFromFile".
-       Using "FindUnderPath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "FindUnderPath"
-         Comparison path is "C:\Users\mkeut\source\repos\minicompiler\x64\Debug\".
-       Done executing task "FindUnderPath".
-       Task "FindUnderPath"
-         Comparison path is "x64\Debug\".
-       Done executing task "FindUnderPath".
-       Task "Delete"
-       Done executing task "Delete".
-       Using "RemoveDuplicates" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "RemoveDuplicates"
-       Done executing task "RemoveDuplicates".
-       Using "MakeDir" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "MakeDir"
-       Done executing task "MakeDir".
-       Using "WriteLinesToFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "WriteLinesToFile"
-         Skipping write to file "x64\Debug\minicompiler.vcxproj.FileListAbsolute.txt" because content would not change.
-       Done executing task "WriteLinesToFile".
-     1>Done building target "CoreClean" in project "minicompiler.vcxproj".
-       Target "_CleanMdbFiles" skipped, due to false condition; (Exists('$(TargetPath).mdb')) was evaluated as (Exists('C:\Users\mkeut\source\repos\minicompiler\x64\Debug\minicompiler.exe.mdb')).
-     1>Target "AssignProjectConfiguration" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "PrepareProjectReferences" depends on it):
+     1>Target "_PrepareForBuild" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "Build" depends on it):
+       Task "CreateItem" skipped, due to false condition; ('%(CustomBuild.IncludeFileToTool)'!='') was evaluated as (''!='').
+     1>Done building target "_PrepareForBuild" in project "minicompiler.vcxproj".
+     1>Target "_PrepareForReferenceResolution" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "ResolveReferences" depends on it):
+       Task "VCMessage" skipped, due to false condition; ('$(WarnAboutIndividualManagedFiles)' == 'true') was evaluated as ('' == 'true').
+       Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
+     1>Done building target "_PrepareForReferenceResolution" in project "minicompiler.vcxproj".
+       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('codegen.cpp;error_handler.cpp;lexer.cpp;...'!='' and 'false'=='true' and '' != 'false').
+     1>Target "BeforeResolveReferences" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "ResolveReferences" depends on it):
+     1>Done building target "BeforeResolveReferences" in project "minicompiler.vcxproj".
+     1>Target "AssignProjectConfiguration" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "ResolveReferences" depends on it):
        Using "AssignProjectConfiguration" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "AssignProjectConfiguration"
        Done executing task "AssignProjectConfiguration".
      1>Done building target "AssignProjectConfiguration" in project "minicompiler.vcxproj".
+       Target "AssignProjectConfiguration" skipped. Previously built successfully.
      1>Target "_SplitProjectReferencesByFileExistence" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "PrepareProjectReferences" depends on it):
        Task "ResolveNonMSBuildProjectOutput" skipped, due to false condition; ('$(BuildingInsideVisualStudio)'=='true' and '@(ProjectReferenceWithConfiguration)'!='') was evaluated as ('true'=='true' and ''!='').
      1>Done building target "_SplitProjectReferencesByFileExistence" in project "minicompiler.vcxproj".
@@ -897,51 +866,8 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\mkeut\source\repo
        Target "_GetProjectReferencePlatformProperties" skipped, due to false condition; ('$(EnableDynamicPlatformResolution)' == 'true'
                             and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true'
                             and '' != '').
-     1>Target "PrepareProjectReferences" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "CleanReferencedProjects" depends on it):
+     1>Target "PrepareProjectReferences" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "ResolveProjectReferences" depends on it):
      1>Done building target "PrepareProjectReferences" in project "minicompiler.vcxproj".
-     1>Target "CleanReferencedProjects" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "Clean" depends on it):
-       Task "MSBuild" skipped, due to false condition; ('$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('true' != 'true' and 'true' == 'true' and '' != '').
-     1>Done building target "CleanReferencedProjects" in project "minicompiler.vcxproj".
-     1>Target "CleanPublishFolder" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "Clean" depends on it):
-       Task "RemoveDir" skipped, due to false condition; ('$(ClickOncePublishDir)'=='$(OutputPath)app.publish\' and Exists('$(ClickOncePublishDir)')) was evaluated as ('C:\Users\mkeut\source\repos\minicompiler\x64\Debug\app.publish\'=='C:\Users\mkeut\source\repos\minicompiler\x64\Debug\app.publish\' and Exists('C:\Users\mkeut\source\repos\minicompiler\x64\Debug\app.publish\')).
-     1>Done building target "CleanPublishFolder" in project "minicompiler.vcxproj".
-     1>Target "AfterClean" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "Clean" depends on it):
-     1>Done building target "AfterClean" in project "minicompiler.vcxproj".
-     1>Target "BeforeCppClean" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "CppClean" depends on it):
-     1>Done building target "BeforeCppClean" in project "minicompiler.vcxproj".
-     1>Target "CoreCppClean" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "CppClean" depends on it):
-       Task "MakeDir"
-       Done executing task "MakeDir".
-       Using "CppClean" task from assembly "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
-       Task "CppClean"
-       Done executing task "CppClean".
-       Task "WriteLinesToFile"
-       Done executing task "WriteLinesToFile".
-     1>Done building target "CoreCppClean" in project "minicompiler.vcxproj".
-     1>Target "AfterCppClean" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "CppClean" depends on it):
-     1>Done building target "AfterCppClean" in project "minicompiler.vcxproj".
-     1>Target "PGInstrumentedClean" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "CppClean" depends on it):
-       Task "Delete"
-       Done executing task "Delete".
-     1>Done building target "PGInstrumentedClean" in project "minicompiler.vcxproj".
-     1>Target "CppClean" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "Clean" depends on it):
-     1>Done building target "CppClean" in project "minicompiler.vcxproj".
-     1>Target "Clean" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "Rebuild" depends on it):
-     1>Done building target "Clean" in project "minicompiler.vcxproj".
-       Target "_CleanXamarinBuildIsIncrementalFile" skipped, due to false condition; ('$(_PostXamarinTelemetry)' == 'true' and Exists('$(_XamarinBuildIsIncrementalFile)')) was evaluated as ('' == 'true' and Exists('')).
-       Target "SetTelemetryEnvironmentVariables" skipped. Previously built successfully.
-     1>Target "_PrepareForBuild" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "Build" depends on it):
-       Task "CreateItem" skipped, due to false condition; ('%(CustomBuild.IncludeFileToTool)'!='') was evaluated as (''!='').
-     1>Done building target "_PrepareForBuild" in project "minicompiler.vcxproj".
-     1>Target "_PrepareForReferenceResolution" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "ResolveReferences" depends on it):
-       Task "VCMessage" skipped, due to false condition; ('$(WarnAboutIndividualManagedFiles)' == 'true') was evaluated as ('' == 'true').
-       Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
-     1>Done building target "_PrepareForReferenceResolution" in project "minicompiler.vcxproj".
-       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('codegen.cpp;error_handler.cpp;lexer.cpp;...'!='' and 'false'=='true' and '' != 'false').
-     1>Target "BeforeResolveReferences" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "ResolveReferences" depends on it):
-     1>Done building target "BeforeResolveReferences" in project "minicompiler.vcxproj".
-       Target "AssignProjectConfiguration" skipped. Previously built successfully.
-       Target "PrepareProjectReferences" skipped. Previously built successfully.
        Target "_RemoveNameMetadataFromProjectReferenceItems" skipped, due to false condition; ('@(ProjectReference)'!='') was evaluated as (''!='').
      1>Target "ResolveProjectReferences" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "ResolveReferences" depends on it):
        Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' != '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and ('true' == 'true' or 'true' != 'true') and '17.0' != '10.0' and '' != '').
@@ -1001,6 +927,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\mkeut\source\repo
        Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)' != 'true' and '$(ConfigurationPlatformExists)' != 'true') was evaluated as ('' != 'true' and 'true' != 'true').
        Task "VCMessage" skipped, due to false condition; ('$(ApplicationType)' == '' and '$(DesignTimeBuild)' != 'true' and '$(_ToolsetFound)' != 'true') was evaluated as ('' == '' and '' != 'true' and 'true' != 'true').
        Task "VCMessage" skipped, due to false condition; ('$(ApplicationType)' != '' and '$(DesignTimeBuild)' != 'true' and '$(_ToolsetFound)' != 'true') was evaluated as ('' != '' and '' != 'true' and 'true' != 'true').
+       Using "MakeDir" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "MakeDir"
        Done executing task "MakeDir".
        Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(WindowsAppContainer)'=='true' and '$(ConfigurationType)'!='Application' and '$(ConfigurationType)'!='DynamicLibrary' and '$(ConfigurationType)'!='StaticLibrary') was evaluated as (''!='true' and 'false'=='true' and 'Application'!='Application' and 'Application'!='DynamicLibrary' and 'Application'!='StaticLibrary').
@@ -1059,8 +986,10 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\mkeut\source\repo
        Target "PrepareForBuild" skipped. Previously built successfully.
        Target "PrepareForBuild" skipped. Previously built successfully.
      1>Target "InitializeBuildStatus" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "Build" depends on it):
+       Using "ReadLinesFromFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "ReadLinesFromFile"
        Done executing task "ReadLinesFromFile".
+       Using "WriteLinesToFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "WriteLinesToFile"
        Done executing task "WriteLinesToFile".
        Using "Touch" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
@@ -1191,21 +1120,35 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\mkeut\source\repo
        Target "SelectAnalysisManifest" skipped, due to false condition; ('$(RunMsvcAnalysis)'=='true' and '$(SelectedFiles)'!='') was evaluated as ('false'=='true' and ''!='').
        Target "ManagedIncrementalBuildPreProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('codegen.cpp;error_handler.cpp;lexer.cpp;...' != '' and 'false' == 'True').
      1>Target "ClCompile" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "_ClCompile" depends on it):
-       Task "Delete"
-       Done executing task "Delete".
+       Task "Delete" skipped, due to false condition; ('%(ClCompile.DebugInformationFormat)' != '' and '%(ClCompile.DebugInformationFormat)' != 'None' and '%(ClCompile.DebugInformationFormat)' != 'OldStyle' and '%(ClCompile.ProgramDataBaseFileName)' != '' and !Exists(%(ClCompile.ProgramDataBaseFileName))) was evaluated as ('EditAndContinue' != '' and 'EditAndContinue' != 'None' and 'EditAndContinue' != 'OldStyle' and 'x64\Debug\vc143.pdb' != '' and !Exists(x64\Debug\vc143.pdb)).
        Task "MultiToolTask" skipped, due to false condition; ('%(ClCompile.CompilerIteration)' == 'Modules') was evaluated as ('' == 'Modules').
        Task "MultiToolTask" skipped, due to false condition; ('%(ClCompile.CompilerIteration)' == '' and '$(MultiProcCL)' == 'true') was evaluated as ('' == '' and 'false' == 'true').
        Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.CompilerIteration)' == '' and '$(MultiProcCL)' != 'true') was evaluated as ('NotUsing' == 'Create' and '' == '' and 'false' != 'true').
        Using "CL" task from assembly "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
        Task "CL"
-         Forcing recompile of all source files due to missing PDB "x64\Debug\vc143.pdb".
+         Read Tracking Logs:
+         	x64\Debug\minicompiler.tlog\CL.read.1.tlog
+         Outputs for C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\CODEGEN.CPP|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\ERROR_HANDLER.CPP|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\LEXER.CPP|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\MAIN.CPP|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\OPTIMIZER.CPP|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\PARSER.CPP:
+         	C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\CODEGEN.OBJ
+         	C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\ERROR_HANDLER.OBJ
+         	C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\LEXER.OBJ
+         	C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\MAIN.OBJ
+         	C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\OPTIMIZER.OBJ
+         	C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\PARSER.OBJ
+         codegen.cpp will be compiled because C:\Users\mkeut\source\repos\minicompiler\codegen.cpp was modified at 12/3/2024 10:44:52 PM.
+         lexer.cpp will be compiled because C:\Users\mkeut\source\repos\minicompiler\lexer.cpp was modified at 12/3/2024 10:44:52 PM.
+         main.cpp will be compiled because C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\PARSER.H was modified at 12/3/2024 10:44:52 PM.
+         optimizer.cpp will be compiled because C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\OPTIMIZER.H was modified at 12/3/2024 10:44:52 PM.
+         parser.cpp will be compiled because C:\Users\mkeut\source\repos\minicompiler\parser.cpp was modified at 12/3/2024 10:44:52 PM.
+         No output for C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\CODEGEN.CPP|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\LEXER.CPP|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\MAIN.CPP|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\OPTIMIZER.CPP|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\PARSER.CPP was found in the tracking log; source compilation required.
+         Write Tracking Logs:
+         	x64\Debug\minicompiler.tlog\CL.write.1.tlog
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1856
-         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt codegen.cpp error_handler.cpp lexer.cpp main.cpp optimizer.cpp parser.cpp
+           VS_UNICODE_OUTPUT=1744
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt codegen.cpp lexer.cpp main.cpp optimizer.cpp parser.cpp
          Tracking command:
-         C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\mkeut\source\repos\minicompiler\x64\Debug\minicompiler.tlog /r "C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\CODEGEN.CPP|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\ERROR_HANDLER.CPP|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\LEXER.CPP|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\MAIN.CPP|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\OPTIMIZER.CPP|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\PARSER.CPP" /b MSBuildConsole_CancelEvent1df9d16350aa423f919ee1ded2e6a533  /c "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe"  /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt codegen.cpp error_handler.cpp lexer.cpp main.cpp optimizer.cpp parser.cpp
+         C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\mkeut\source\repos\minicompiler\x64\Debug\minicompiler.tlog /r "C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\CODEGEN.CPP|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\LEXER.CPP|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\MAIN.CPP|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\OPTIMIZER.CPP|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\PARSER.CPP" /b MSBuildConsole_CancelEventf88faba845734477aa9766eb61a6aa0e  /c "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe"  /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt codegen.cpp lexer.cpp main.cpp optimizer.cpp parser.cpp
          codegen.cpp
-         error_handler.cpp
          lexer.cpp
          main.cpp
          optimizer.cpp
@@ -1324,8 +1267,44 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\mkeut\source\repo
      1>Target "Link" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "_Link" depends on it):
        Using "Link" task from assembly "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
        Task "Link"
+         Write Tracking Logs:
+         	x64\Debug\minicompiler.tlog\link.write.1.tlog
+         Read Tracking Logs:
+         	x64\Debug\minicompiler.tlog\link.read.1.tlog
+         Outputs for C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\CODEGEN.OBJ|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\ERROR_HANDLER.OBJ|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\LEXER.OBJ|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\MAIN.OBJ|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\OPTIMIZER.OBJ|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\PARSER.OBJ:
+         	C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\MINICOMPILER.EXE
+         	C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\MINICOMPILER.ILK
+         	C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\MINICOMPILER.PDB
+         Inputs for C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\CODEGEN.OBJ|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\ERROR_HANDLER.OBJ|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\LEXER.OBJ|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\MAIN.OBJ|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\OPTIMIZER.OBJ|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\PARSER.OBJ:
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.22621.0\UM\X64\KERNEL32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.22621.0\UM\X64\USER32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.22621.0\UM\X64\GDI32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.22621.0\UM\X64\WINSPOOL.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.22621.0\UM\X64\COMDLG32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.22621.0\UM\X64\ADVAPI32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.22621.0\UM\X64\SHELL32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.22621.0\UM\X64\OLE32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.22621.0\UM\X64\OLEAUT32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.22621.0\UM\X64\UUID.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.22621.0\UM\X64\ODBC32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.22621.0\UM\X64\ODBCCP32.LIB
+         	C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\CODEGEN.OBJ
+         	C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\ERROR_HANDLER.OBJ
+         	C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\LEXER.OBJ
+         	C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\MAIN.OBJ
+         	C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\OPTIMIZER.OBJ
+         	C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\PARSER.OBJ
+         	C:\WINDOWS\SYSTEM32\TZRES.DLL
+         	C:\WINDOWS\GLOBALIZATION\SORTING\SORTDEFAULT.NLS
+         	C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.37.32822\LIB\X64\MSVCPRTD.LIB
+         	C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.37.32822\LIB\X64\MSVCRTD.LIB
+         	C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.37.32822\LIB\X64\OLDNAMES.LIB
+         	C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.37.32822\LIB\X64\VCRUNTIMED.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.22621.0\UCRT\X64\UCRTD.LIB
+         	C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\VC143.PDB
+         Source compilation required: input C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\CODEGEN.OBJ is newer than output C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\MINICOMPILER.PDB.
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=2020
+           VS_UNICODE_OUTPUT=1732
          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\mkeut\source\repos\minicompiler\x64\Debug\minicompiler.exe" /INCREMENTAL /ILK:"x64\Debug\minicompiler.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\mkeut\source\repos\minicompiler\x64\Debug\minicompiler.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\mkeut\source\repos\minicompiler\x64\Debug\minicompiler.lib" /MACHINE:X64 x64\Debug\codegen.obj
          x64\Debug\error_handler.obj
          x64\Debug\lexer.obj
@@ -1333,7 +1312,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\mkeut\source\repo
          x64\Debug\optimizer.obj
          x64\Debug\parser.obj
          Tracking command:
-         C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\mkeut\source\repos\minicompiler\x64\Debug\minicompiler.tlog /r "C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\CODEGEN.OBJ|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\ERROR_HANDLER.OBJ|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\LEXER.OBJ|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\MAIN.OBJ|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\OPTIMIZER.OBJ|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\PARSER.OBJ" /b MSBuildConsole_CancelEventb085ba67bc134140bad9b7d01bc704b8  /c "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\mkeut\source\repos\minicompiler\x64\Debug\minicompiler.exe" /INCREMENTAL /ILK:"x64\Debug\minicompiler.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\mkeut\source\repos\minicompiler\x64\Debug\minicompiler.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\mkeut\source\repos\minicompiler\x64\Debug\minicompiler.lib" /MACHINE:X64 x64\Debug\codegen.obj
+         C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\mkeut\source\repos\minicompiler\x64\Debug\minicompiler.tlog /r "C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\CODEGEN.OBJ|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\ERROR_HANDLER.OBJ|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\LEXER.OBJ|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\MAIN.OBJ|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\OPTIMIZER.OBJ|C:\USERS\MKEUT\SOURCE\REPOS\MINICOMPILER\X64\DEBUG\PARSER.OBJ" /b MSBuildConsole_CancelEvent40bec9ed79df4a92895fdbf910c9a23f  /c "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\mkeut\source\repos\minicompiler\x64\Debug\minicompiler.exe" /INCREMENTAL /ILK:"x64\Debug\minicompiler.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\mkeut\source\repos\minicompiler\x64\Debug\minicompiler.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\mkeut\source\repos\minicompiler\x64\Debug\minicompiler.lib" /MACHINE:X64 x64\Debug\codegen.obj
          x64\Debug\error_handler.obj
          x64\Debug\lexer.obj
          x64\Debug\main.obj
@@ -1574,6 +1553,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\mkeut\source\repo
        Using "ConvertToAbsolutePath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "ConvertToAbsolutePath"
        Done executing task "ConvertToAbsolutePath".
+       Using "FindUnderPath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "FindUnderPath"
          Comparison path is "C:\Users\mkeut\source\repos\minicompiler".
        Done executing task "FindUnderPath".
@@ -1583,6 +1563,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\mkeut\source\repo
        Task "FindUnderPath"
          Comparison path is "x64\Debug\".
        Done executing task "FindUnderPath".
+       Using "RemoveDuplicates" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "RemoveDuplicates"
        Done executing task "RemoveDuplicates".
      1>Done building target "_CleanGetCurrentAndPriorFileWrites" in project "minicompiler.vcxproj".
@@ -1593,12 +1574,12 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\mkeut\source\repo
        Task "FindUnderPath"
          Comparison path is "x64\Debug\".
        Done executing task "FindUnderPath".
+       Using "Delete" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Delete"
        Done executing task "Delete".
        Task "RemoveDuplicates"
        Done executing task "RemoveDuplicates".
-       Task "WriteLinesToFile"
-       Done executing task "WriteLinesToFile".
+       Task "WriteLinesToFile" skipped, due to false condition; ('@(_CleanUnfilteredPriorFileWrites)'!='@(_CleanUniqueRemainingFileWritesAfterIncrementalClean)') was evaluated as ('C:\Users\mkeut\source\repos\minicompiler\x64\Debug\minicompiler.exe'!='C:\Users\mkeut\source\repos\minicompiler\x64\Debug\minicompiler.exe').
      1>Done building target "IncrementalClean" in project "minicompiler.vcxproj".
      1>Target "TlogCleanup" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "Build" depends on it):
        Using "CleanupStaleTlogItems" task from assembly "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
@@ -1613,19 +1594,16 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\mkeut\source\repo
          Touching "x64\Debug\minicompiler.tlog\minicompiler.lastbuildstate".
        Done executing task "Touch".
      1>Done building target "FinalizeBuildStatus" in project "minicompiler.vcxproj".
-     1>Target "Build" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "Rebuild" depends on it):
+       Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
+       Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
+     1>Target "Build" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (entry point):
      1>Done building target "Build" in project "minicompiler.vcxproj".
        Target "_CalculatePostXamarinTelemetry" skipped. Previously built successfully.
        Target "_PostXamarinTelemetry" skipped, due to false condition; ('$(_PostXamarinTelemetry)' == 'true') was evaluated as ('' == 'true').
-     1>Target "AfterRebuild" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (target "Rebuild" depends on it):
-     1>Done building target "AfterRebuild" in project "minicompiler.vcxproj".
-       Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
-     1>Target "Rebuild" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (entry point):
-     1>Done building target "Rebuild" in project "minicompiler.vcxproj".
-     1>Done Building Project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (Rebuild target(s)).
+     1>Done Building Project "C:\Users\mkeut\source\repos\minicompiler\minicompiler.vcxproj" (Build target(s)).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:04.10
+Time Elapsed 00:00:03.23
