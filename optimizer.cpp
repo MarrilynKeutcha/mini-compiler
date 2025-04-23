@@ -1,8 +1,3 @@
-#include "optimizer.h"
-#include <regex>
-#include <map>
-#include <iostream>
-
 void optimizeIntermediateCode(std::vector<std::string>& intermediateCode) {
     std::vector<std::string> optimizedCode;
     std::map<std::string, int> constants;
@@ -72,6 +67,6 @@ void optimizeIntermediateCode(std::vector<std::string>& intermediateCode) {
         }
     }
 
-    // Append optimized code to the original vector
-    intermediateCode.insert(intermediateCode.end(), optimizedCode.begin(), optimizedCode.end());
+
+intermediateCode = optimizedCode;
 }
