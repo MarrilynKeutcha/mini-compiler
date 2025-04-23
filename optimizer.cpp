@@ -1,3 +1,8 @@
+#include "optimizer.h"
+#include <regex>
+#include <map>
+#include <iostream>
+
 void optimizeIntermediateCode(std::vector<std::string>& intermediateCode) {
     std::vector<std::string> optimizedCode;
     std::map<std::string, int> constants;
